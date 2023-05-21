@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="input1" >
+    <br><br>
+    <input type="text" id="input2">
+    <h1 id="reslt">Result</h1>
+
+    <button onclick="Add()">ADD</button>
+    <button onclick="Sub()">Sub</button>
+    <button onclick="Mult()">Mult</button>
+    <button onclick="Divide()">Divide</button>
+    <button onclick="Clear()">Clear</button>
+
+    <script >
+        function Add(){
+           let a =  document.getElementById("input1").value
+           let b =  document.getElementById("input2").value 
+           document.getElementById("reslt").innerText=a+b;
+        }
+
+        function Sub(){
+            let a = document.getElementById("input1").value
+            let b = document.getElementById("input2").value
+            document.getElementById("reslt").innerText=a-b
+        }
+
+        function Mult(){
+            let a = document.getElementById("input1").value
+            let b = document.getElementById("input2").value
+            document.getElementById("reslt").innerText= a*b
+        }
+        function Divide(){
+            let a = document.getElementById("input1").value
+            let b = document.getElementById("input2").value
+            document.getElementById("reslt").innerText=a/b
+        }
+
+        function Clear(){
+            let a = document.getElementById("input1").value
+            let b = document.getElementById("input2").value
+            document.getElementById("reslt").innerText=""
+        }
+
+
+    </script>
+</body>
+</html>
